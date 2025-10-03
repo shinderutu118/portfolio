@@ -1,0 +1,156 @@
+.project-detail {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.project-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 0;
+}
+
+.back-btn {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: white;
+}
+
+.project-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-meta {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.project-meta span {
+  margin-right: 1rem;
+}
+
+.project-content {
+  padding: 4rem 0;
+}
+
+.project-content section {
+  margin-bottom: 3rem;
+}
+
+.project-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.project-overview p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.features-list,
+.challenges-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li,
+.challenges-list li {
+  background: #f9fafb;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  border-left: 4px solid #2563eb;
+  position: relative;
+}
+
+.features-list li::before {
+  content: "✓";
+  color: #059669;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.challenges-list li::before {
+  content: "⚡";
+  margin-right: 0.5rem;
+}
+
+.links-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.btn.secondary:hover {
+  background: #2563eb;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .project-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .project-meta span {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .links-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
