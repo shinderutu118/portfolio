@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css'; // Ensure this file exists and is correctly linked
-import resumePDF from '../assets/MERN_STACK_Rutuja_Shinde.pdf';
+import resumePDF from '../assets/Rutuja_Shinde Mern stack.pdf';
 
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
